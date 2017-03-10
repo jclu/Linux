@@ -1,0 +1,18 @@
+1. ShellWithFunc.sh
+#!/bin/bash
+funcName() {
+  # func content
+  echo "$1"
+    
+  return 1
+}
+
+2. CallShell.sh
+#!/bin/bash
+
+# load func shell
+source ShellWithFunc.sh
+# display funcs
+set
+# run func
+funcName 
